@@ -5,7 +5,8 @@
     "category": "Action",
     "rating": 4.9,
     "iframeUrl": "https://gn-math.dev/?id=591#goog_rewarded",
-    "thumbnail": "https://picsum.photos/seed/slime-rancher/600/400"
+    "thumbnail": "https://picsum.photos/seed/slime-rancher/600/400",
+    "isPort": true
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "category": "Horror",
     "rating": 4.7,
     "iframeUrl": "https://gn-math.dev/?id=166#goog_rewarded",
-    "thumbnail": "https://picsum.photos/seed/bad-parenting/600/400"
+    "thumbnail": "https://picsum.photos/seed/bad-parenting/600/400",
+    "isPort": true
   },
   {
     "id": 3,

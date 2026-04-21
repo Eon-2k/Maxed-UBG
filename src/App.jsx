@@ -7,6 +7,8 @@ import RequestGameForm from "./components/RequestGameForm.jsx";
 import GameView from "./components/GameView.jsx";
 import AppView from "./components/AppView.jsx";
 import SearchProxy from "./components/SearchProxy.jsx";
+import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
+import ContactUs from "./components/ContactUs.jsx";
 import Footer from "./components/Footer.jsx";
 
 export default function App() {
@@ -23,6 +25,8 @@ export default function App() {
             <Route path="/game/:id" element={<GameView />} />
             <Route path="/app/:id" element={<AppView />} />
             <Route path="/request" element={<RequestGameForm />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/contact" element={<ContactUs />} />
           </Routes>
         </main>
         <Footer />

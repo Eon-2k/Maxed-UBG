@@ -6,6 +6,8 @@ const AppView = () => {
   const { id } = useParams();
   const app = appsData.find(a => a.id === parseInt(id));
 
+  const isPort = app?.title?.toLowerCase().includes("(port)");
+
   if (!app) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-32 text-center text-white">
@@ -28,13 +30,15 @@ const AppView = () => {
           </div>
         </div>
         
-        <button 
-          onClick={() => window.open(app.iframeUrl, '_blank')}
-          className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-xl text-xs font-bold text-text-dim hover:text-white transition-colors"
-        >
-          <Maximize2 size={16} />
-          Open Fullscreen
-        </button>
+        {!isPort && (
+          <button 
+            onClick={() => window.open(app.iframeUrl, '_blank')}
+            className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-xl text-xs font-bold text-text-dim hover:text-white transition-colors"
+          >
+            <Maximize2 size={16} />
+            Open Fullscreen
+          </button>
+        )}
       </div>
 
       <div className="bento-card p-2 aspect-video w-full bg-black overflow-hidden relative shadow-2xl">
