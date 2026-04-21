@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Slime rancher (port)",
+    "category": "Action",
+    "rating": 4.9,
+    "iframeUrl": "https://gn-math.dev/?id=591#goog_rewarded",
+    "thumbnail": "https://picsum.photos/seed/slime-rancher/600/400"
+  },
+  {
+    "id": 2,
+    "title": "Bad Parenting (PORT)",
+    "category": "Horror",
+    "rating": 4.7,
+    "iframeUrl": "https://gn-math.dev/?id=166#goog_rewarded",
+    "thumbnail": "https://picsum.photos/seed/bad-parenting/600/400"
+  },
+  {
+    "id": 3,
+    "title": "Friday Night Funkin",
+    "category": "Music",
+    "rating": 4.8,
+    "iframeUrl": "https://gn-math.dev/?id=8#goog_rewarded",
+    "thumbnail": "https://picsum.photos/seed/fnf-game/600/400"
+  },
+  {
+    "id": 4,
+    "title": "Karlson",
+    "category": "Action",
+    "rating": 4.9,
+    "iframeUrl": "https://gn-math.dev/?id=542#goog_rewarded",
+    "thumbnail": "https://picsum.photos/seed/karlson-game/600/400"
+  }
+]

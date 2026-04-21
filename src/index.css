@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", sans-serif;
+  
+  --color-brand: #38bdf8;
+  --color-brand-muted: #334155;
+  --color-bg: #020617;
+  --color-card: #0f172a;
+  --color-border: #1e293b;
+  --color-accent: #38bdf8;
+  --color-text-dim: #94a3b8;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-[#f8fafc] font-sans antialiased;
+  }
+}
+
+.bento-card {
+  @apply bg-card border border-border rounded-[24px] p-6 transition-all duration-300 hover:border-brand;
+}
+
+.bento-featured {
+  @apply bg-gradient-to-br from-[#0f172a] to-[#1e1b4b] relative overflow-hidden;
+}
+
+.bento-featured::after {
+  content: '';
+  @apply absolute -top-[20%] -right-[10%] w-[300px] h-[300px] bg-brand/10 blur-[60px] pointer-events-none rounded-full;
+}
+
+.pill {
+  @apply bg-brand-muted px-3 py-1.5 rounded-full text-[12px] font-bold text-text-dim;
+}
+
+.cta-button {
+  @apply bg-brand text-bg font-bold px-6 py-3 rounded-[12px] transition-all hover:opacity-90 active:scale-95 text-center;
+}
+
+.neon-glow {
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+.input-field {
+  @apply bg-card border border-brand-muted rounded-[12px] px-4 py-3 text-sm text-white outline-none focus:border-brand/50 transition-all;
+}
