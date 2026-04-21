@@ -11,8 +11,8 @@ const GameView = () => {
   if (!game) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-32 text-center text-white">
-        <h2 className="text-2xl font-bold">Game not found</h2>
-        <Link to="/games" className="text-brand mt-4 inline-block underline">Back to library</Link>
+        <h2 className="text-2xl font-bold">Lesson not found</h2>
+        <Link to="/lessons" className="text-brand mt-4 inline-block underline">Back to library</Link>
       </div>
     );
   }
@@ -21,7 +21,7 @@ const GameView = () => {
     <div className="max-w-7xl mx-auto px-4 pt-32 pb-12">
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-4">
-          <Link to="/games" className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center text-text-dim hover:text-white transition-colors">
+          <Link to="/lessons" className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center text-text-dim hover:text-white transition-colors">
             <ChevronLeft size={20} />
           </Link>
           <div>
@@ -56,7 +56,7 @@ const GameView = () => {
           <h3 className="font-bold text-xl mb-4">Description</h3>
           <p className="text-text-dim leading-relaxed">
             Experience {game.title} directly in your browser. This unblocked version is optimized for performance and works seamlessly in any environment. 
-            Enjoy smooth gameplay, instant loading, and no-restrictions access.
+            Enjoy smooth lessonplay, instant loading, and no-restrictions access.
           </p>
         </div>
         

@@ -5,15 +5,15 @@
     "category": "Utility",
     "rating": 5.0,
     "iframeUrl": "https://boredom.global.ssl.fastly.net/",
-    "thumbnail": "https://picsum.photos/seed/boredom-v2/600/400"
+    "thumbnail": ""
   },
   {
     "id": 2,
     "title": "55GMS Hub",
-    "category": "Games Hub",
+    "category": "Lessons Hub",
     "rating": 4.9,
     "iframeUrl": "https://55gms.com/",
-    "thumbnail": "https://picsum.photos/seed/55gms/600/400"
+    "thumbnail": ""
   },
   {
     "id": 3,
@@ -21,6 +21,6 @@
     "category": "AI Tool",
     "rating": 4.8,
     "iframeUrl": "https://app.ace.ai/chat_ai?utm_source=gs_23692028536_197155777320_805249422950&network=g&matchtype=e&device=c&devicemodel=&gclid=CjwKCAjwnZfPBhAGEiwAzg-VzDiE6dKWczDsjGregYg9OFtgyMjlJm3QI3z5GjBCW4NXYJv90d-3MBoCupAQAvD_BwE&keyword=free%20gpt&placement=&target=&loc_physical_ms=9002000&loc_interest_ms=&gad_source=1&gad_campaignid=23692028536&gbraid=0AAAABBTRt5wxrVmuOUlhSu46-bw85oaa7&gclid=CjwKCAjwnZfPBhAGEiwAzg-VzDiE6dKWczDsjGregYg9OFtgyMjlJm3QI3z5GjBCW4NXYJv90d-3MBoCupAQAvD_BwE",
-    "thumbnail": "https://picsum.photos/seed/ai-chat/600/400"
+    "thumbnail": ""
   }
 ]

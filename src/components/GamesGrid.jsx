@@ -48,7 +48,7 @@ const GamesGrid = () => {
       <div className="flex flex-col gap-12 mb-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
-            <h2 className="font-display text-4xl font-extrabold tracking-tight mb-2 uppercase italic">Game Library</h2>
+            <h2 className="font-display text-4xl font-extrabold tracking-tight mb-2 uppercase italic">Lesson Library</h2>
             <p className="text-text-dim max-w-md">Browse our collection of unblocked titles. Search, sort, and play instantly.</p>
           </div>
 
@@ -57,7 +57,7 @@ const GamesGrid = () => {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-text-dim group-focus-within:text-brand transition-colors" size={16} />
               <input
                 type="text"
-                placeholder="Search games..."
+                placeholder="Search lessons..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="bg-card border border-border rounded-xl pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-brand transition-all w-full md:w-64"
@@ -115,21 +115,18 @@ const GamesGrid = () => {
                 className="group"
               >
                 <div className="bento-card border-border/50 hover:border-brand/50 h-full cursor-pointer overflow-hidden p-3 flex flex-col group transition-all hover:bg-white/[0.02]">
-                  <Link to={`/game/${game.id}`}>
-                    <div className="aspect-[16/10] bg-zinc-900 overflow-hidden relative rounded-xl mb-4">
-                      <img
-                        src={game.thumbnail}
-                        alt={game.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute top-2 left-2 bg-text px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-tighter text-bg">
+                  <Link to={`/lesson/${game.id}`}>
+                    <div className="aspect-[16/10] bg-gradient-to-br from-zinc-800 to-zinc-950 overflow-hidden relative rounded-xl mb-4 border border-white/5 flex items-center justify-center p-6 text-center">
+                      <span className="font-black text-lg sm:text-xl uppercase italic tracking-tighter text-white group-hover:text-brand transition-colors relative z-10">
+                        {game.title}
+                      </span>
+                      <div className="absolute top-2 left-2 bg-text px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-tighter text-bg z-20">
                         {game.category}
                       </div>
                     </div>
                   </Link>
                   <div className="flex-grow">
-                    <Link to={`/game/${game.id}`}>
+                    <Link to={`/lesson/${game.id}`}>
                       <h3 className="font-extrabold text-lg group-hover:text-brand transition-colors tracking-tight leading-tight">{game.title}</h3>
                     </Link>
                     <div className="flex items-center justify-between mt-3">
@@ -146,7 +143,7 @@ const GamesGrid = () => {
                   
                   <div className="mt-5">
                     <Link 
-                      to={`/game/${game.id}`}
+                      to={`/lesson/${game.id}`}
                       className="w-full py-2.5 bg-white text-bg hover:bg-brand transition-all rounded-lg text-center font-black text-[10px] uppercase tracking-widest flex items-center justify-center gap-2"
                     >
                       Initialize Play
@@ -172,7 +169,7 @@ const GamesGrid = () => {
             >
               Reset All
             </button>
-            <Link to="/request" className="cta-button inline-block">Request Game</Link>
+            <Link to="/request" className="cta-button inline-block">Request Lesson</Link>
           </div>
         </div>
       )}

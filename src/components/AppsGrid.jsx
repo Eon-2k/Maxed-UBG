@@ -26,14 +26,11 @@ const AppsGrid = () => {
             >
               <div className="bento-card border-border hover:border-brand h-full cursor-pointer overflow-hidden p-3 flex flex-col">
                 <Link to={`/app/${app.id}`}>
-                  <div className="aspect-[16/10] bg-zinc-800 overflow-hidden relative rounded-xl mb-4">
-                    <img
-                      src={app.thumbnail}
-                      alt={app.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      referrerPolicy="no-referrer"
-                    />
-                    <div className="absolute top-2 left-2 bg-brand/90 backdrop-blur-md px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tighter text-bg">
+                  <div className="aspect-[16/10] bg-gradient-to-br from-zinc-800/50 to-zinc-950 overflow-hidden relative rounded-xl mb-4 border border-white/5 flex items-center justify-center p-6 text-center">
+                    <span className="font-black text-lg sm:text-xl uppercase italic tracking-tighter text-white group-hover:text-brand transition-colors relative z-10">
+                      {app.title}
+                    </span>
+                    <div className="absolute top-2 left-2 bg-brand/90 backdrop-blur-md px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tighter text-bg z-20">
                       {app.category}
                     </div>
                   </div>

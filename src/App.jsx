@@ -19,10 +19,10 @@ export default function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Hero />} />
-            <Route path="/games" element={<GamesGrid />} />
+            <Route path="/lessons" element={<GamesGrid />} />
             <Route path="/apps" element={<AppsGrid />} />
             <Route path="/search" element={<SearchProxy />} />
-            <Route path="/game/:id" element={<GameView />} />
+            <Route path="/lesson/:id" element={<GameView />} />
             <Route path="/app/:id" element={<AppView />} />
             <Route path="/request" element={<RequestGameForm />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />

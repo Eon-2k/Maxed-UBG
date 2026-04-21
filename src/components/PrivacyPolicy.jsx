@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
             <h2 className="text-white font-bold text-xl mb-3 underline decoration-brand/30">No Warranty</h2>
             <p>
               The content provided on this site is "as is" and without warranties of any kind. We do not guarantee 
-              uninterrupted access or that the games provided will function perfectly in all environments.
+              uninterrupted access or that the lessons provided will function perfectly in all environments.
             </p>
           </section>
 

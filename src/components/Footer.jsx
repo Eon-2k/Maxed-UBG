@@ -13,15 +13,15 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-text-dim text-sm leading-relaxed mb-6">
-              The premier destination for high-quality unblocked games. Play anywhere, anytime.
+              The premier destination for high-quality unblocked lessons. Play anywhere, anytime.
             </p>
           </div>
 
           <div>
             <h4 className="font-bold text-white mb-6">Platform</h4>
             <ul className="space-y-4 text-sm">
-              <li><Link to="/games" className="text-text-dim hover:text-brand transition-colors">Games Library</Link></li>
-              <li><Link to="/request" className="text-text-dim hover:text-brand transition-colors">Request a Game</Link></li>
+              <li><Link to="/lessons" className="text-text-dim hover:text-brand transition-colors">Lessons Library</Link></li>
+              <li><Link to="/request" className="text-text-dim hover:text-brand transition-colors">Request a Lesson</Link></li>
             </ul>
           </div>
 
@@ -50,7 +50,7 @@ const Footer = () => {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-text-dim text-xs">
-            © {new Date().getFullYear()} Maxed-UBG unblocked games.
+            © {new Date().getFullYear()} Maxed-UBG unblocked lessons.
           </p>
         </div>
       </div>

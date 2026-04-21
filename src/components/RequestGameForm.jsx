@@ -52,7 +52,7 @@ const RequestGameForm = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-[12px] bg-brand/10 text-brand mb-6 border border-brand/20">
             <MessageSquare size={32} strokeWidth={2.5} />
           </div>
-          <h2 className="font-display text-4xl font-extrabold tracking-tight mb-4">Request Game</h2>
+          <h2 className="font-display text-4xl font-extrabold tracking-tight mb-4">Request Lesson</h2>
           <p className="text-text-dim text-sm">All requests are sent directly to <span className="text-brand">wxrdfn2110@gmail.com</span> for review.</p>
         </div>
 
@@ -65,7 +65,7 @@ const RequestGameForm = () => {
             >
               <CheckCircle2 size={64} className="text-brand mx-auto mb-6" />
               <h3 className="text-2xl font-bold mb-2">Request Sent!</h3>
-              <p className="text-text-dim mb-8">Your request has been dispatched. We'll add your game as soon as possible.</p>
+              <p className="text-text-dim mb-8">Your request has been dispatched. We'll add your lesson as soon as possible.</p>
               <button
                 onClick={() => setIsSubmitted(false)}
                 className="pill px-6 py-2 hover:bg-zinc-700 transition-colors"
@@ -80,7 +80,7 @@ const RequestGameForm = () => {
                   required
                   name="gameTitle"
                   type="text"
-                  placeholder="Game Title..."
+                  placeholder="Lesson Title..."
                   className="input-field w-full"
                 />
                 <input
@@ -96,7 +96,7 @@ const RequestGameForm = () => {
                   className="input-field w-full resize-none"
                 />
                 
-                <input type="hidden" name="_subject" value="New Game Request - Maxed-UBG" />
+                <input type="hidden" name="_subject" value="New Lesson Request - Maxed-UBG" />
                 <input type="hidden" name="_template" value="table" />
                 
                 <button
