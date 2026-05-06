@@ -1,6 +1,13 @@
 {
   "name": "Maxed-UBG",
   "description": "A modern and sleek unblocked lessons hub for the ultimate gaming experience.",
-  "requestFramePermissions": ["fullscreen"],
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation",
+    "fullscreen",
+    "autoplay",
+    "display-capture"
+  ],
   "majorCapabilities": []
 }

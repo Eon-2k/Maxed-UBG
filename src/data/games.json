@@ -1,36 +1,11 @@
 [
   {
     "id": 1,
-    "title": "Slime rancher (port)",
-    "category": "Chill",
-    "rating": 4.9,
-    "iframeUrl": "https://gn-math.dev/?id=591#goog_rewarded",
-    "thumbnail": "",
-    "isPort": true
-  },
-  {
-    "id": 2,
-    "title": "Bad Parenting (PORT)",
-    "category": "Horror",
-    "rating": 4.7,
-    "iframeUrl": "https://gn-math.dev/?id=166#goog_rewarded",
-    "thumbnail": "",
-    "isPort": true
-  },
-  {
-    "id": 3,
-    "title": "Friday Night Funkin",
-    "category": "Fast Paced",
+    "title": "Rally Racer Dirt",
+    "category": "Racing",
     "rating": 4.8,
-    "iframeUrl": "https://gn-math.dev/?id=8#goog_rewarded",
-    "thumbnail": ""
-  },
-  {
-    "id": 4,
-    "title": "Karlson",
-    "category": "Action",
-    "rating": 4.9,
-    "iframeUrl": "https://gn-math.dev/?id=542#goog_rewarded",
-    "thumbnail": ""
+    "iframeUrl": "/rally-racer-dirt.html",
+    "thumbnail": "",
+    "isPort": true
   }
 ]

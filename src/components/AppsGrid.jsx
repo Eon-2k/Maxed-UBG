@@ -13,54 +13,65 @@ const AppsGrid = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        <AnimatePresence mode="popLayout">
-          {appsData.map((app) => (
-            <motion.div
-              layout
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              key={app.id}
-              className="group"
-            >
-              <div className="bento-card border-border hover:border-brand h-full cursor-pointer overflow-hidden p-3 flex flex-col">
-                <Link to={`/app/${app.id}`}>
-                  <div className="aspect-[16/10] bg-gradient-to-br from-zinc-800/50 to-zinc-950 overflow-hidden relative rounded-xl mb-4 border border-white/5 flex items-center justify-center p-6 text-center">
-                    <span className="font-black text-lg sm:text-xl uppercase italic tracking-tighter text-white group-hover:text-brand transition-colors relative z-10">
-                      {app.title}
-                    </span>
-                    <div className="absolute top-2 left-2 bg-brand/90 backdrop-blur-md px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tighter text-bg z-20">
-                      {app.category}
-                    </div>
-                  </div>
-                </Link>
-                <div className="flex-grow">
+      {appsData.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <AnimatePresence mode="popLayout">
+            {appsData.map((app) => (
+              <motion.div
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                key={app.id}
+                className="group"
+              >
+                <div className="bento-card border-border hover:border-brand h-full cursor-pointer overflow-hidden p-3 flex flex-col">
                   <Link to={`/app/${app.id}`}>
-                    <h3 className="font-extrabold text-lg group-hover:text-brand transition-colors tracking-tight">{app.title}</h3>
+                    <div className="aspect-[16/10] bg-gradient-to-br from-zinc-800/50 to-zinc-950 overflow-hidden relative rounded-xl mb-4 border border-white/5 flex items-center justify-center p-6 text-center">
+                      <span className="font-black text-lg sm:text-xl uppercase italic tracking-tighter text-white group-hover:text-brand transition-colors relative z-10">
+                        {app.title}
+                      </span>
+                      <div className="absolute top-2 left-2 bg-brand/90 backdrop-blur-md px-2 py-0.5 rounded-md text-[9px] font-black uppercase tracking-tighter text-bg z-20">
+                        {app.category}
+                      </div>
+                    </div>
                   </Link>
-                  <div className="flex items-center justify-between mt-2">
-                    <span className="text-[10px] font-bold text-text-dim uppercase tracking-widest">Instant Launch</span>
-                    <div className="flex items-center gap-1">
-                      <span className="text-brand text-xs">★</span>
-                      <span className="text-[10px] font-bold text-white">{app.rating}</span>
+                  <div className="flex-grow">
+                    <Link to={`/app/${app.id}`}>
+                      <h3 className="font-extrabold text-lg group-hover:text-brand transition-colors tracking-tight">{app.title}</h3>
+                    </Link>
+                    <div className="flex items-center justify-between mt-2">
+                      <span className="text-[10px] font-bold text-text-dim uppercase tracking-widest">Instant Launch</span>
+                      <div className="flex items-center gap-1">
+                        <span className="text-brand text-xs">★</span>
+                        <span className="text-[10px] font-bold text-white">{app.rating}</span>
+                      </div>
                     </div>
                   </div>
+                  
+                  <div className="mt-4">
+                    <Link 
+                      to={`/app/${app.id}`}
+                      className="w-full py-2 bg-white/5 hover:bg-brand hover:text-bg transition-all rounded-lg text-center font-bold text-xs flex items-center justify-center gap-2"
+                    >
+                      Launch App
+                    </Link>
+                  </div>
                 </div>
-                
-                <div className="mt-4">
-                  <Link 
-                    to={`/app/${app.id}`}
-                    className="w-full py-2 bg-white/5 hover:bg-brand hover:text-bg transition-all rounded-lg text-center font-bold text-xs flex items-center justify-center gap-2"
-                  >
-                    Launch App
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+      ) : (
+        <div className="text-center py-32 px-4 bento-card border-dashed">
+          <AppWindow className="mx-auto text-text-dim/20 mb-6" size={80} />
+          <h3 className="text-2xl font-black mb-2 uppercase tracking-tight">Apps Database Empty</h3>
+          <p className="text-text-dim mb-8 max-w-sm mx-auto text-sm">The utilities library is currently disconnected. Please initialize entries in the data hub.</p>
+          <div className="flex justify-center gap-4">
+            <Link to="/request" className="cta-button inline-block">Request Utility</Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

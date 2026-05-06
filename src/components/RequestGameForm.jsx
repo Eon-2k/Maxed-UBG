@@ -53,7 +53,7 @@ const RequestGameForm = () => {
             <MessageSquare size={32} strokeWidth={2.5} />
           </div>
           <h2 className="font-display text-4xl font-extrabold tracking-tight mb-4">Request Lesson</h2>
-          <p className="text-text-dim text-sm">All requests are sent directly to <span className="text-brand">wxrdfn2110@gmail.com</span> for review.</p>
+          <p className="text-text-dim text-sm">All requests are sent directly to owner and staff for review.</p>
         </div>
 
         <div className="bento-card shadow-2xl relative overflow-hidden flex flex-col justify-between min-h-[400px]">
